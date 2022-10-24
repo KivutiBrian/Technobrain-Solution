@@ -26,7 +26,7 @@ def fibonacci_sequence(number: int) -> int:
     return nums[number]
 
 
-print(fibonacci_sequence(9))
+print(fibonacci_sequence(1))
 
 
 
@@ -42,7 +42,7 @@ def reverse_word(s:str) -> str:
     s: str = s.strip()
 
     # return a string of the words in reverse order concatenated by a single space
-    return " ".join(s[::-1].split()[::-1])
+    return " ".join(s.split()[::-1])
 
 print(reverse_word("Brian Kivuti"))
 print(reverse_word("Joseph"))
