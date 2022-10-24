@@ -20,7 +20,7 @@ def fibonacci_sequence(number: int) -> int:
         raise Exception("number must be 0")
 
     # Generate the next fibonacci numbers upto the number passed as parameter
-    for i in range(2, number+1):
+    for i in range(2, number):
         nums.append(nums[i-1] + nums[i-2])
 
     return nums[number-1]
