@@ -23,10 +23,10 @@ def fibonacci_sequence(number: int) -> int:
     for i in range(2, number+1):
         nums.append(nums[i-1] + nums[i-2])
 
-    return nums[number]
+    return nums[number-1]
 
 
-print(fibonacci_sequence(1))
+print(fibonacci_sequence(9))
 
 
 
@@ -45,14 +45,13 @@ def reverse_word(s:str) -> str:
     return " ".join(s.split()[::-1])
 
 print(reverse_word("Brian Kivuti"))
+print(reverse_word("Hello world two"))
 print(reverse_word("Joseph"))
 
 
 
 def server_access(filename: str, top: int = 10):
-    """
-
-    
+    """    
     Parameters
     ----------
     filename: str - the name of csv file
