@@ -1,6 +1,6 @@
 Create an environment
 
-```python -m venv env``
+```python -m venv env```
 
 Install the requirements
 
